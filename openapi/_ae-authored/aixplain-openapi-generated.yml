@@ -1,0 +1,159 @@
+openapi: 3.1.0
+info:
+  title: aiXplain API
+  version: '2026-09-22'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-22: 5 operation(s) read from 4 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; aiXplain has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-source-kind: mostly-language-sdk-reference
+  x-source-caveat: 'every page read was a language SDK reference (a client library), not a REST reference: paths and methods are the ones those
+    pages name, and no request or response shape was taken from them'
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-22'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.aixplain.com/resources/faqs
+  - https://docs.aixplain.com/api-reference/python/aixplain/v2/agent
+  - https://docs.aixplain.com/api-reference/python/aixplain/v2/session
+  - https://docs.aixplain.com/api-reference/python/aixplain/v2/trigger
+servers:
+- url: https://platform-api.aixplain.com
+paths:
+  /v1/sessions:
+    get:
+      operationId: get_v1_sessions
+      tags:
+      - Sessions
+      summary: GET /v1/sessions
+      x-source: https://docs.aixplain.com/api-reference/python/aixplain/v2/session
+      parameters:
+      - name: agent
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Filter by agent — an Agent instance or an agent id string.
+      - name: status
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Filter by session status (e.g. "active").
+      - name: user_id
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Filter by owning user id.
+      - name: created_after
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Lower bound on the session's creation time (datetime or ISO string).
+      - name: created_before
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Upper bound on the session's creation time (datetime or ISO string).
+      - name: memory_enabled
+        in: query
+        required: false
+        schema:
+          type: boolean
+        description: When true return memory‑on sessions; when false return memory‑off sessions; null applies no filter.
+      - name: page_number
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Zero‑indexed page number (default 0).
+      - name: page_size
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Page size (default 20).
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV1SessionsResponse'
+  /v1/sessions/{id}/messages:
+    post:
+      operationId: post_v1_sessions_id_messages
+      tags:
+      - Sessions
+      summary: User message is posted to POST /v1/sessions/{id}/messages (carrying the session's executionConfig plus any per‑run execution overrides).
+      x-source: https://docs.aixplain.com/api-reference/python/aixplain/v2/agent
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+  /v1/triggers:
+    delete:
+      operationId: delete_v1_triggers
+      tags:
+      - Triggers
+      summary: DELETE /v1/triggers
+      x-source: https://docs.aixplain.com/api-reference/python/aixplain/v2/trigger
+      responses:
+        '200':
+          description: Success (status as documented)
+    put:
+      operationId: put_v1_triggers
+      tags:
+      - Triggers
+      summary: PUT /v1/triggers
+      x-source: https://docs.aixplain.com/api-reference/python/aixplain/v2/trigger
+      responses:
+        '200':
+          description: Success (status as documented)
+  /v2/agents/{id}/run:
+    post:
+      operationId: post_v2_agents_id_run
+      tags:
+      - Agents
+      summary: Stateless run is performed over POST /v2/agents/{id}/run.
+      x-source: https://docs.aixplain.com/api-reference/python/aixplain/v2/agent
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+components:
+  schemas:
+    GetV1SessionsResponse:
+      type: object
+      properties:
+        sessions:
+          type: array
+          description: Array of Session objects.
+        page_number:
+          type: integer
+          description: Current page number.
+        page_size:
+          type: integer
+          description: Size of each page.
+        total:
+          type: integer
+          description: Total number of sessions matching the filters.
+tags:
+- name: Agents
+- name: Sessions
+- name: Triggers

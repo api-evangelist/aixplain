@@ -1,0 +1,23 @@
+generated: '2026-09-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.aixplain.com/pricing
+sources:
+- https://www.aixplain.com/pricing
+name: aiXplain pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Builder Free
+  price_text: Free
+  description: For individuals and small teams. Everything you need to build and run AI agents with control over every action they take.
+- name: Teams
+  price_text: $75 Per user, per month — usage billed separately.
+  price: 75
+  description: Advanced controls, collaboration, and compliance for enterprise teams. Everything in Builder plus team workspaces with role‑based
+    access controls, runtime governance controls, advanced analytics and audit trails.
+- name: Enterprise Custom
+  price_text: starting at $500K/yr
+  description: Full‑stack deployment sovereignty with dedicated infrastructure and support. Everything in Teams plus on‑prem and air‑gapped deployment,
+    compliance, custom integrations and connectors, perpetual licensing options, data residency guarantees.
+docs: https://www.aixplain.com/pricing

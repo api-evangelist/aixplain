@@ -1,0 +1,23 @@
+generated: '2026-09-22'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io)
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (aixplain.com,
+  security/aixplain-domain-security.yml, security/aixplain-trust-center.yml) or its accepted GitHub org.'
+packages:
+- name: aixplain
+  registry: pypi
+  url: https://pypi.org/project/aixplain/
+  language: Python
+  official: true
+  version: 0.2.48
+  published: '2026-09-11'
+  evidence: metadata names aixplain.com
+- name: aixplain
+  registry: npm
+  url: https://www.npmjs.com/package/aixplain
+  language: JavaScript
+  official: false
+  version: 1.0.0
+  published: '2023-02-26'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'

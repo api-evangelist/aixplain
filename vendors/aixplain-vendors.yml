@@ -1,0 +1,42 @@
+generated: '2026-09-22'
+method: probed
+source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
+registry: all/0-working/vendors.yml
+areas_vocabulary:
+- documentation
+- developer-portal
+- api-gateway
+- cdn
+- hosting
+- sdk-generation
+- api-collections
+- status-page
+- support
+- community
+- identity
+- mcp-hosting
+vendors:
+- vendor: cloudfront
+  name: Amazon CloudFront
+  area: cdn
+  host: docs.aixplain.com
+  evidence: cname:cloudfront.net
+  signal: cname
+  confidence: high
+  kin_score: []
+- vendor: docusaurus
+  name: Docusaurus
+  area: documentation
+  host: docs.aixplain.com
+  evidence: markup:docusaurus
+  signal: docs-platform
+  confidence: medium
+  kin_score: []
+checked:
+- 'docs-platform: docusaurus'
+- docs.aixplain.com (GettingStarted)
+- www.aixplain.com (Website)
+- docs.aixplain.com (Documentation)
+- docs.aixplain.com (APIReference)
+- www.aixplain.com (Support)
+- platform-api.aixplain.com (baseURL)
