@@ -24,7 +24,17 @@ created: '2026-09-22'
 
 modified: '2026-09-22'
 
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-24
+x-docs-hosting: aws-cloudfront
 tags:
+- Company
+- Artificial Intelligence
+- Autonomous-Work
+- Enterprise
+- Platform
+tags_raw:
 - Company
 - AI
 - Autonomous-Work
@@ -90,19 +100,42 @@ common:
   url: https://www.aixplain.com/about
 
 apis:
-- aid: aixplain:aixplain-api
-  name: aiXplain API
-  description: 'aiXplain API as documented publicly: 5 operations. Contract generated from the documentation by API Evangelist (2026-09-22); not
-    the provider''s own document.'
+- aid: aixplain:aixplain-agents-api
+  name: aiXplain Agents API
+  description: The Agents API from aiXplain — 1 operation(s) for agents.
   humanURL: https://docs.aixplain.com/api-reference/python/aixplain/v2/agent
   baseURL: https://platform-api.aixplain.com
+  tags:
+  - Agents
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/aixplain-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/aixplain-agents-api-openapi.yml
   - type: JSONSchema
     url: json-schema/aixplain-get-v1-sessions-response-schema.json
-
+- aid: aixplain:aixplain-sessions-api
+  name: aiXplain Sessions API
+  description: The Sessions API from aiXplain — 2 operation(s) for sessions.
+  humanURL: https://docs.aixplain.com/api-reference/python/aixplain/v2/agent
+  baseURL: https://platform-api.aixplain.com
+  tags:
+  - Sessions
+  properties:
+  - type: OpenAPI
+    url: openapi/aixplain-sessions-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/aixplain-get-v1-sessions-response-schema.json
+- aid: aixplain:aixplain-triggers-api
+  name: aiXplain Triggers API
+  description: The Triggers API from aiXplain — 1 operation(s) for triggers.
+  humanURL: https://docs.aixplain.com/api-reference/python/aixplain/v2/agent
+  baseURL: https://platform-api.aixplain.com
+  tags:
+  - Triggers
+  properties:
+  - type: OpenAPI
+    url: openapi/aixplain-triggers-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/aixplain-get-v1-sessions-response-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

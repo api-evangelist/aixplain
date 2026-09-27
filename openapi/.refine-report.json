@@ -1,0 +1,20 @@
+{
+  "provider": "aixplain",
+  "sources": [
+    "_ae-authored/aixplain-openapi-generated.yml"
+  ],
+  "outputs": [
+    "aixplain-agents-api-openapi.yml",
+    "aixplain-sessions-api-openapi.yml",
+    "aixplain-triggers-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "aixplain-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+3 apis, 3 total)"
+  ],
+  "skipped": []
+}
