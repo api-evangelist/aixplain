@@ -1,0 +1,21 @@
+{
+  "repo": "aixplain",
+  "feeds": [
+    {
+      "source": "https://github.com/aixplain/aiXplain/releases",
+      "feed_url": "https://github.com/aixplain/aiXplain/releases.atom",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://github.com/aixplain/aiXplain/releases.atom",
+      "feed_url": "https://github.com/aixplain/aiXplain/releases.atom",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-10-03T12:30:02Z"
+}
