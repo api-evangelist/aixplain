@@ -21,3 +21,28 @@ plans:
   description: Full‑stack deployment sovereignty with dedicated infrastructure and support. Everything in Teams plus on‑prem and air‑gapped deployment,
     compliance, custom integrations and connectors, perpetual licensing options, data residency guarantees.
 docs: https://www.aixplain.com/pricing
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Builder Free
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Teams
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise Custom
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
