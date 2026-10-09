@@ -1,0 +1,32 @@
+# Front Door AI Index — aixplain — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: aixplain
+  lexicon_version: '1.0'
+  probed_at: '2026-09-25'
+  host: www.aixplain.com
+  final_host: www.aixplain.com
+  ownership: own
+  owner: aixplain
+  shares_host_with: null
+  inherited_from: null
+  alias_of: null
+  verdict: scored
+  score: 16
+  band: 5
+  band_label: prominent
+  host_score: 16
+  density: 15.31
+  words: 1045
+  tiers:
+    agentic: 4
+    core: 12
+    model: 0
+  ambiguous: 51
+  top_terms:
+    agent: 51
+    AI: 12
+    AI agent: 2
+    agentic: 1
+    inference: 1
