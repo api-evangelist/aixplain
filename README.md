@@ -64,5 +64,123 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-aiXplain is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+aiXplain provides an operating system for autonomous work, enabling enterprises to build, orchestrate, and govern AI agents at scale while maintaining data privacy and compliance. The platform offers tools such as Studio for visual building, SDKs, on‑prem and air‑gapped deployments, and integrates with thousands of models across 63 countries. It targets regulated industries with SOC 2 Type II certification and supports enterprise, research, and pricing tiers.
+
+**Areas:** Company · Artificial Intelligence · Autonomous-Work · Enterprise · Platform
+
+## aiXplain on APIs.io
+
+Everything profiled for aiXplain is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aixplain/](https://apis.io/providers/aixplain/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [aiXplain Agents API](https://apis.io/apis/aixplain/aixplain-agents-api/) — The Agents API from aiXplain — 1 operation(s) for agents.
+- [aiXplain Sessions API](https://apis.io/apis/aixplain/aixplain-sessions-api/) — The Sessions API from aiXplain — 2 operation(s) for sessions.
+- [aiXplain Triggers API](https://apis.io/apis/aixplain/aixplain-triggers-api/) — The Triggers API from aiXplain — 1 operation(s) for triggers.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (1)
+
+The data models the API reads and writes.
+
+- [GetV1SessionsResponse](https://apis.io/schemas/aixplain/aixplain-get-v1-sessions-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Aixplain Context](https://apis.io/jsonld/aixplain/aixplain-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [aiXplain API Rules](https://apis.io/rules/aixplain/aixplain-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aixplain Domain Security](https://apis.io/security/aixplain/aixplain-domain-security/)
+- [Aixplain Trust Center](https://apis.io/security/aixplain/aixplain-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Aixplain Plans Pricing](https://apis.io/plans/aixplain/aixplain-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.aixplain.com/)
+- [Documentation](https://docs.aixplain.com/)
+- [Getting started](https://docs.aixplain.com/getting-started/quick-start/)
+- [API reference](https://docs.aixplain.com/)
+- [Pricing](https://www.aixplain.com/pricing)
+- [Support](https://www.aixplain.com/contact)
+- [Changelog](https://github.com/aixplain/aiXplain/releases)
+- [Blog](https://www.aixplain.com/blog)
+- [Security](https://www.aixplain.com/security)
+- [Compliance](https://www.aixplain.com/security)
+- [Terms of service](https://www.aixplain.com/terms-of-service)
+- [Privacy policy](https://www.aixplain.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 43.0** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 17.8 |
+| Contract governance | 22.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 78.9 |
+
+**Agent readiness 14.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 21.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aixplain/](https://apis.io/providers/aixplain/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for aiXplain: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aixplain/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
